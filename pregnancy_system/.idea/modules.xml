@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pregnancy_system.iml" filepath="$PROJECT_DIR$/pregnancy_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ps-common/ps-common.iml" filepath="$PROJECT_DIR$/ps-common/ps-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ps-dao/ps-dao.iml" filepath="$PROJECT_DIR$/ps-dao/ps-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ps-service/ps-service.iml" filepath="$PROJECT_DIR$/ps-service/ps-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ps-service-impl/ps-service-impl.iml" filepath="$PROJECT_DIR$/ps-service-impl/ps-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ps-web/ps-web.iml" filepath="$PROJECT_DIR$/ps-web/ps-web.iml" />
+    </modules>
+  </component>
+</project>
