@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>基础信息查询</title>
+		<link rel="stylesheet" href="../lib/layui/css/layui.css">
+	</head>
+	<body>
+		<form class="layui-form" action="" style="margin-top: 10px;">
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">档案编号</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" autocomplete="off" placeholder="请输入编号" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">开始时间</label>
+					<div class="layui-input-inline">
+						<input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">结束时间</label>
+					<div class="layui-input-inline">
+						<input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">妻子姓名</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" autocomplete="off" placeholder="请输入编号" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">证件号码</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" autocomplete="off" placeholder="请输入编号" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">丈夫姓名</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" autocomplete="off" placeholder="请输入编号" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">证件号码</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" autocomplete="off" placeholder="请输入编号" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">评估状态</label>
+					<div class="layui-input-inline">
+						<select name="modules" lay-verify="required" lay-search="">
+							<option value="">直接选择或搜索选择</option>
+							<option value="1">layer</option>
+							<option value="2">form</option>
+							<option value="3">layim</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">检验状态</label>
+					<div class="layui-input-inline">
+						<select name="modules" lay-verify="required" lay-search="">
+							<option value="">直接选择或搜索选择</option>
+							<option value="1">layer</option>
+							<option value="2">form</option>
+							<option value="3">layim</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">B超状态</label>
+					<div class="layui-input-inline">
+						<select name="modules" lay-verify="required" lay-search="">
+							<option value="">直接选择或搜索选择</option>
+							<option value="1">layer</option>
+							<option value="2">form</option>
+							<option value="3">layim</option>
+						</select>
+					</div>
+				</div>
+
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">登记类型</label>
+					<div class="layui-input-inline">
+						<select name="modules" lay-verify="required" lay-search="">
+							<option value="">直接选择或搜索选择</option>
+							<option value="1">layer</option>
+							<option value="2">form</option>
+							<option value="3">layim</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-inline" style="margin-left: 100px;">
+					<button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">查询</button>
+					<button type="reset" class="layui-btn layui-btn-primary">清空查询条件</button>
+				</div>
+			</div>
+			<table class="layui-hide" id="test" lay-filter="test"></table>
+			<script type="text/html" id="barDemo">
+				<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+			    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+			</script>
+		</form>
+	</body>
+	<script src="../lib/layui/layui.js"></script>
+	<script>
+		layui.use(['form', 'layedit', 'laydate'], function() {
+			var form = layui.form,
+				layer = layui.layer,
+				layedit = layui.layedit,
+				laydate = layui.laydate;
+
+			//日期
+			laydate.render({
+				elem: '#date'
+			});
+			laydate.render({
+				elem: '#date1'
+			});
+
+			//监听提交
+			form.on('submit(demo1)', function(data) {
+				layer.alert(JSON.stringify(data.field), {
+					title: '最终的提交信息'
+				})
+				return false;
+			});
+
+		});
+	</script>
+	<script>
+		layui.use('table', function() {
+			var table = layui.table;
+
+			//温馨提示：默认由前端自动合计当前行数据。从 layui 2.5.6 开始： 若接口直接返回了合计行数据，则优先读取接口合计行数据。
+			//详见：https://www.layui.com/doc/modules/table.html#totalRow
+			table.render({
+				elem: '#test',
+				url: '/test/table/demo1.json',
+				toolbar: '#toolbarDemo',
+				title: '用户数据表',
+				totalRow: true,
+				cols: [
+					[{
+						type: 'checkbox',
+						fixed: 'left'
+					}, {
+						field: 'id',
+						title: 'ID',
+						width: 80,
+						fixed: 'left',
+						unresize: true,
+						sort: true,
+						totalRowText: '合计'
+					}, {
+						field: 'username',
+						title: '用户名',
+						width: 120,
+						edit: 'text'
+					}, {
+						field: 'email',
+						title: '邮箱',
+						width: 150,
+						edit: 'text',
+						templet: function(res) {
+							return '<em>' + res.email + '</em>'
+						}
+					}, {
+						field: 'experience',
+						title: '积分',
+						width: 80,
+						sort: true,
+						totalRow: true
+					}, {
+						field: 'sex',
+						title: '性别',
+						width: 80,
+						edit: 'text',
+						sort: true
+					}, {
+						field: 'logins',
+						title: '登入次数',
+						width: 100,
+						sort: true,
+						totalRow: true
+					}, {
+						field: 'sign',
+						title: '签名'
+					}, {
+						field: 'city',
+						title: '城市',
+						width: 100
+					}, {
+						field: 'ip',
+						title: 'IP',
+						width: 120
+					}, {
+						field: 'joinTime',
+						title: '加入时间',
+						width: 120
+					}, {
+						fixed: 'right',
+						title: '操作',
+						toolbar: '#barDemo',
+						width: 150
+					}]
+				],
+				page: true
+			});
+
+			//工具栏事件
+			table.on('toolbar(test)', function(obj) {
+				var checkStatus = table.checkStatus(obj.config.id);
+				switch (obj.event) {
+					case 'getCheckData':
+						var data = checkStatus.data;
+						layer.alert(JSON.stringify(data));
+						break;
+					case 'getCheckLength':
+						var data = checkStatus.data;
+						layer.msg('选中了：' + data.length + ' 个');
+						break;
+					case 'isAll':
+						layer.msg(checkStatus.isAll ? '全选' : '未全选')
+						break;
+				};
+			});
+		});
+	</script>
+	
+</html>
