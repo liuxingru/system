@@ -12,10 +12,6 @@
 			tr td:nth-child(2){
 				text-indent: 1em;
 			}
-			.title{
-				font-size: 25px;
-				margin-left: 5%;
-			}
 			#tdimg{
 				text-align: left;
 				background-color: #FFFFFF;
@@ -32,8 +28,9 @@
 			<div class="layui-row">
 				<div class="layui-col-md3 divborder"  style="height: 500px;">
 					<div style="margin-left: 2%;">
-						<span class="title">基本信息</span>
-						<br /><br />
+						<fieldset class="layui-elem-field layui-field-title">
+							<legend>基本信息</legend>
+						</fieldset>
 						<table border="1" height="380px">
 							<tr>
 								<td width="35%">档案编号：</td>
@@ -91,18 +88,19 @@
 				<div class="layui-col-md6">
 					<div>
 						<div style="height: 450px; text-align: center;" class="divborder">
-							<img src="../images/结果.png" width="80%"/>
+							<img src="../images/结果.png" width="90%"/>
 						</div><br />
 						<div style="text-align: center;">
 							<button type="button" class="layui-btn layui-btn-normal" style="width: 18%;">查询</button>
 							<button type="button" class="layui-btn layui-btn-warm" style="width: 18%;">打印</button>
 							<button type="button" class="layui-btn layui-btn-danger" style="width: 18%;">返回</button>
-C						</div>
+						</div>
 					</div>
 				</div>
 				<div class="layui-col-md3 divborder" style="height: 500px;">
-					<span class="title">检查结果</span>
-					<br /><br /><br />
+					<fieldset class="layui-elem-field layui-field-title">
+						 <legend>检查结果</legend>
+					</fieldset>
 					<form class="layui-form" action="">
 						<div class="layui-form-item">
 							<label class="layui-form-label">异常情况：</label>
