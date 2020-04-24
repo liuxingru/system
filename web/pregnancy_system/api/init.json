@@ -18,15 +18,13 @@
 					"target": "_self",
 					"child": [{
 							"title": "基础信息查询",
-							"href": "html/aaaa.html",
+							"href": "html/Basicinformation.html",
 							"target": "_self"
-						},
-						{
-							"title": "未填信息查询",
-							"href": "html/bbbb.html",
+						},{
+							"title": "新增档案",
+							"href": "html/Newfile.html",
 							"target": "_self"
-						}
-					]
+						}]
 				},
 				{
 					"title": "妻子信息",
@@ -34,7 +32,11 @@
 					"target": "_self",
 					"child": [{
 						"title": "一般情况",
-						"href": "html/ccccc.html",
+						"href": "html/Fgeneral.html",
+						"target": "_self"
+					},{
+						"title": "体格检查",
+						"href": "html/Fphysical.html",
 						"target": "_self"
 					}]
 				},
@@ -44,7 +46,21 @@
 					"target": "_self",
 					"child": [{
 						"title": "一般情况",
-						"href": "html/dddd.html",
+						"href": "html/Bgeneral.html",
+						"target": "_self"
+					},{
+						"title": "体格检查",
+						"href": "html/Bphysical.html",
+						"target": "_self"
+					}]
+				},
+				{
+					"title": "免费孕前优生健康检查",
+					"href": "",
+					"target": "_self",
+					"child": [{
+						"title": "同意书",
+						"href": "html/Letterofauthorization.html",
 						"target": "_self"
 					}]
 				}
