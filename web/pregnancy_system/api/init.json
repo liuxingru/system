@@ -98,7 +98,7 @@
 				"target": "_self",
 				"child": [{
 						"title": "查询档案信息",
-						"href": "html/gggg.html?v=1",
+						"href": "html/Basicinformation.html?v=1",
 						"target": "_self"
 					},
 					{
