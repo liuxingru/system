@@ -152,12 +152,12 @@
 						},
 						{
 							"title": "X射线检查",
-							"href": "html/x-ray.html",
+							"href": "html/x-ray_examine.html",
 							"target": "_self"
 						},
 						{
 							"title": "口腔检查",
-							"href": "html/pppp.html",
+							"href": "html/oral_cavity_examine .html",
 							"target": "_self"
 						},
 						{

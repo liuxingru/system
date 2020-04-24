@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../layui/css/layui.css">
+		<style type="text/css">
+			tr td:first-child{
+				background-color: #BBBBBB;
+				text-align: center;
+			}
+			tr td:nth-child(2){
+				text-indent: 1em;
+			}
+			.title{
+				font-size: 25px;
+				margin-left: 5%;
+			}
+			#tdimg{
+				text-align: left;
+				background-color: #FFFFFF;
+				text-indent: 5em;
+			}
+			.divborder{
+				border: 1px solid #BBBBBB;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="layui-fluid">  
+		<br /><br />
+			<div class="layui-row">
+				<div class="layui-col-md3 divborder"  style="height: 500px;">
+					<div style="margin-left: 2%;">
+						<span class="title">基本信息</span>
+						<br /><br />
+						<table border="1" height="380px">
+							<tr>
+								<td width="35%">档案编号：</td>
+								<td width="200px;">123</td>
+							</tr>
+							<tr>
+								<td>妻子姓名：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>出生日期：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>年龄：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>身份证号：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>丈夫姓名：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>出生日期：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>年龄：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>身份证号：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>户口性质：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td>操作医生：</td>
+								<td>123</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="background-color: #009688;border: #00B7EE 1px solid;">双击删除图片</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="border: #00B7EE 1px solid;" id="tdimg"><img src="../images/结果.png" width="50px"/></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="layui-col-md6">
+					<div>
+						<div style="height: 450px; text-align: center;" class="divborder">
+							<img src="../images/结果.png" width="80%"/>
+						</div><br />
+						<div style="text-align: center;">
+							<button type="button" class="layui-btn layui-btn-normal" style="width: 18%;">查询</button>
+							<button type="button" class="layui-btn layui-btn-warm" style="width: 18%;">打印</button>
+							<button type="button" class="layui-btn layui-btn-danger" style="width: 18%;">返回</button>
+C						</div>
+					</div>
+				</div>
+				<div class="layui-col-md3 divborder" style="height: 500px;">
+					<span class="title">检查结果</span>
+					<br /><br /><br />
+					<form class="layui-form" action="">
+						<div class="layui-form-item">
+							<label class="layui-form-label">异常情况：</label>
+							<div class="layui-input-block">
+								<select name="city" lay-verify="required">
+									<option value=""></option>
+									<option value="0">北京</option>
+									<option value="1">上海</option>
+									<option value="2">广州</option>
+									<option value="3">深圳</option>
+									<option value="4">杭州</option>
+								</select>
+							</div>
+						</div>
+						<div class="layui-form-item layui-form-text">
+							<label class="layui-form-label">B超所见：</label>
+							<div class="layui-input-block">
+								<textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">检查医生：</label>
+							<div class="layui-input-block">
+								<input type="text" name="title" required  lay-verify="required" placeholder="请输入医生姓名" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">检查日期：</label>
+							<div class="layui-input-block">
+								<input id="examineDate" type="text" name="title" required  lay-verify="required" placeholder="请输入日期" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+	</body>
+	<script src="../layui/layui.js"></script>
+	<script>
+
+		layui.use(['form','laydate'], function(){
+			var form = layui.form,
+			laydate = layui.laydate;
+			laydate.render({
+				elem: '#examineDate'
+				//指定元素
+
+			});
+		});
+	</script>
+</html>
