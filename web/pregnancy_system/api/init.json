@@ -119,12 +119,12 @@
 					"target": "_self",
 					"child": [{
 						"title": "婚前检查证明(女)",
-						"href": "html/sssss.html",
+						"href": "html/medical_evidence_feman.html",
 						"target": "_self"
 						},
 						{
 							"title": "婚前检查证明(男)",
-							"href": "html/tttt.html",
+							"href": "html/medical_evidence_man.html",
 							"target": "_self"
 						}
 					
