@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>检查结果女</title>
-		<link rel="stylesheet" href="../lib/layui/layui.css">
+		<link rel="stylesheet" href="/lib/layui/layui.css">
 		<link rel="stylesheet" href="../css/public.css" media="all">
 	</head>
 	<body>
@@ -37,7 +37,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="layui-col-md12" style="margin-left: 2%;">
+											<div class="layui-col-md12">
 												<iframe name="toppage" width=100%; height=600px; marginwidth=0; marginheight=0; frameborder="no"; border="0;"  src="examine_result_feman_1.html"; ></iframe>
 											</div>
 									</fieldset>
@@ -240,7 +240,7 @@
 											<div class="layui-form-item">
 												<label class="layui-form-label">登记日期：</label>
 												<div class="layui-input-block" style="width:40%;">
-													<input id="examineDate3" type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+													<input id="examineDate4" type="text" name="title" required lay-verify="required" placeholder="请输入标题"
 													 autocomplete="off" class="layui-input">
 												</div>
 											</div>
@@ -258,7 +258,7 @@
 			</div>
 		</div><br /><br /><br />
 	</body>
-	<script src="../lib/layui//layui.js"></script>
+	<script src="/lib/layui//layui.js"></script>
 	<script>
 		layui.use(['form', 'laydate', 'jquery', 'table'], function() {
 			var form = layui.form,
@@ -277,6 +277,11 @@
 			});
 			laydate.render({
 				elem: '#examineDate3'
+				//指定元素
+
+			});
+			laydate.render({
+				elem: '#examineDate4'
 				//指定元素
 
 			});

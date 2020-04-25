@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ToPage {
     @RequestMapping("/{page}")
     public String toPage(@PathVariable("page") String page){
-        System.out.println("1111111111111");
+        System.out.println("1111111111111111");
         return page;
     }
 }
