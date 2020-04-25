@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59d4a8c2-b687-4d51-b515-d74959818f74" name="Default Changelist" comment="" />
-
-
     <list default="true" id="59d4a8c2-b687-4d51-b515-d74959818f74" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
@@ -251,8 +248,7 @@
       <workItem from="1587559823820" duration="4199000" />
       <workItem from="1587609816239" duration="1062000" />
       <workItem from="1587624678383" duration="641000" />
-
-      <workItem from="1587776868170" duration="2861000" />
+      <workItem from="1587776868170" duration="3494000" />
     </task>
     <servers />
   </component>
