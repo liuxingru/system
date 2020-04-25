@@ -27,7 +27,6 @@
 	<body>
 		<div class="layuimini-container">
 			<div class="layuimini-main">
-
 				<fieldset class="table-search-fieldset">
 					<legend>查询条件</legend>
 					<div style="margin: 10px 10px 10px 10px">
@@ -72,11 +71,11 @@
 										</select>
 									</div>
 								</div>
-								
+
 								<div class="layui-row">
 									<br />
 									<div class="layui-col-md6">
-										
+
 										<button type="button" class="layui-btn layui-btn-normal btn-right1"> 查 询</button>
 									</div>
 									<div class="layui-col-md6">
@@ -135,12 +134,12 @@
 		<script>
 			// 自定义模块
 			layui.config({
-			    base: '../ext/',   // 模块目录
-			    version: 'v1.5.4'
-			}).extend({                         // 模块别名
-			    soulTable: 'soulTable'
+				base: '../ext/', // 模块目录
+				version: 'v1.5.4'
+			}).extend({ // 模块别名
+				soulTable: 'soulTable'
 			});
-			layui.use(['form', 'layedit', 'laydate', 'table','soulTable'], function() {
+			layui.use(['form', 'layedit', 'laydate', 'table', 'soulTable'], function() {
 				var form = layui.form,
 					layer = layui.layer,
 					layedit = layui.layedit,
@@ -151,29 +150,30 @@
 					elem: '#demo',
 					height: 500,
 					url: '../test.json' //数据接口
-					,page: true //开启分页
-					,totalRow: true
-					,limit: 5,
-					limits: [5, 10, 15, 20, 25]
-					,contextmenu: {
-					    // 表格内容右键菜单配置
-					    body: [
-					        {
-					           name: '复制',
-					           icon: 'layui-icon layui-icon-template',
-					           click: function(obj) {
-					               soulTable.copy(JSON.stringify(obj.row));
-					               layer.msg('复制成功！') 
-					           }
-					        },
-					        {
-					            name: '删除当前行数据',
-					            click: function(obj) {
-					                obj.del() 
-					            }
-					        }
-					    ],
-					} ,
+						,
+					page: true //开启分页
+						,
+					totalRow: true,
+					limit: 5,
+					limits: [5, 10, 15, 20, 25],
+					contextmenu: {
+						// 表格内容右键菜单配置
+						body: [{
+								name: '复制',
+								icon: 'layui-icon layui-icon-template',
+								click: function(obj) {
+									soulTable.copy(JSON.stringify(obj.row));
+									layer.msg('复制成功！')
+								}
+							},
+							{
+								name: '删除当前行数据',
+								click: function(obj) {
+									obj.del()
+								}
+							}
+						],
+					},
 					cols: [
 						[ //表头
 							{
@@ -219,8 +219,9 @@
 								sort: true
 							}
 						]
-					],done: function () {
-					    soulTable.render(this)
+					],
+					done: function() {
+						soulTable.render(this)
 					}
 				});
 			});
