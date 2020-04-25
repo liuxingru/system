@@ -2,7 +2,6 @@ package com.csdj.psserviceimpl;
 
 import com.csdj.pojo.Test;
 
-import com.csdj.psdao.TestDao;
 import com.csdj.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

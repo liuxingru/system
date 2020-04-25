@@ -1,5 +1,7 @@
 package com.csdj.pojo;
 
+import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+
 /**
  * 超声影像表
  */
@@ -9,6 +11,15 @@ public class UltrasonicImage {
     private Integer result;//检查结果
     private String resultDescribe;//结果描述
     private Integer eId;//检查医生与时间（外键 对应检查医生与检查时间表）
+    private String certificate;//证件号码
+
+    public String getCertificate() {
+        return certificate;
+    }
+
+    public void setCertificate(String certificate) {
+        this.certificate = certificate;
+    }
 
     public Integer getId() {
         return id;
