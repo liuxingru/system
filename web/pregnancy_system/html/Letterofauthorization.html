@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>同意书</title>
+		<link rel="stylesheet" href="../lib/layui/css/layui.css">
+	</head>
+	<body>
+		<div class="layui-container" style="width: 800px;">
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+				<legend style="font-size: 20px;">知情同意书</legend>
+			</fieldset>
+			<div>
+				<p style="padding-left: 50px;padding-top: 5px;">为了您将来的宝宝更加健康、您的家庭更加幸福，政府为符合生育政策、计划怀孕的农村夫妇免费提供次孕前优生健</p>
+				<p style="padding-top: 5px;">康检查。</p>
+				<p style="padding-left: 50px;padding-top: 5px;">孕前优生健康检查建议在计划受孕前4-6个月内进行，内容包括优生健康教育、病史询问、体格检查、临床实验检
+					<p style="padding-top: 5px;">查、影像学检查、风险评估、咨询指导等服务，主要目的是查找可能导致出生缺陷等不良妊姬结局的风险因因素，有</p>
+					<p style="padding-top: 5px;">助于夫妇了解双方的健康情况，得到较为全面的健康指导，使计划怀孕夫妇在良好的心理、生理状态下受孕，积极预防出生</p>
+					<p style="padding-top: 5px;">缺陷的发生，帮助夫妇实现生育-个健康宝宝的美好愿望。孕前优生健康检查针对众多孕前风险因素中较重要或较常见的因素</p>
+					<p style="padding-top: 5px;">进行检查，各项检查结果反映的是夫妇双方现阶段身体状况。由于怀孕、胎儿生长发育是一个复杂的生理过程，还会存在其</p>
+					<p style="padding-top: 5px;">他不确定因素,因此尽管此次检查结果正常，或者发现风险因素采取相关预防措施后，仍有生育出生缺陷儿发生其他不良妊娠</p>
+					<p style="padding-top: 5px;">结局(自然流产、死胎、死产等)的可能，怀孕后仍需定期接受受孕检查和保健。</p>
+					<p style="padding-left: 50px;padding-top: 5px;">如果您原意参加本次检查，请在之情同意书上签名。您的个人信息将会得到严格保密。</p>
+					<p style="padding-left: 50px;padding-top: 5px;">对上述情况，本人完全理解。经认真考虑，本人同意接受免费孕前优生健康检查，并原意和能够按要求接受随访服<p>务。</p>
+					</p>
+			</div>
+			<form class="layui-form" action="" style="margin-top: 20px;">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">丈夫签字: </label>
+						<div class="layui-input-inline">
+							<input type="text" name="title" required lay-verify="required" autocomplete="off" placeholder="请输入名字" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label">日期:</label>
+						<div class="layui-input-inline">
+							<input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">妻子签字: </label>
+						<div class="layui-input-inline">
+							<input type="text" name="title" required lay-verify="required" autocomplete="off" placeholder="请输入名字" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label">日期:</label>
+						<div class="layui-input-inline">
+							<input type="text" name="date" id="date1" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">医生签字：</label>
+						<div class="layui-input-inline">
+							<select name="quiz">
+								<option value="">管理员</option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label">日期:</label>
+						<div class="layui-input-inline">
+							<input type="text" name="date" id="date2" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline" style="margin-left: 320px;">
+						<button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">保存</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</body>
+	<script src="../lib/layui/layui.js"></script>
+	<script type="text/javascript ">
+		layui.use(['form', 'layedit', 'laydate'], function() {
+			var form = layui.form,
+				layer = layui.layer,
+				layedit = layui.layedit,
+				laydate = layui.laydate;
+
+			//日期
+			laydate.render({
+				elem: '#date'
+			});
+			laydate.render({
+				elem: '#date1'
+			});
+			laydate.render({
+				elem: '#date2'
+			});
+
+		});
+		
+	</script>
+</html>

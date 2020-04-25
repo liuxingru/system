@@ -1,7 +1,7 @@
 {
 	"homeInfo": {
 		"title": "首页",
-		"href": "html/aaaa.html"
+		"href": "html/Basicinformation.html"
 	},
 	"logoInfo": {
 		"title": "孕前优生检查",
@@ -18,15 +18,13 @@
 					"target": "_self",
 					"child": [{
 							"title": "基础信息查询",
-							"href": "html/aaaa.html",
+							"href": "html/Basicinformation.html",
 							"target": "_self"
-						},
-						{
-							"title": "未填信息查询",
-							"href": "html/bbbb.html",
+						},{
+							"title": "新增档案",
+							"href": "html/Newfile.html",
 							"target": "_self"
-						}
-					]
+						}]
 				},
 				{
 					"title": "妻子信息",
@@ -34,7 +32,11 @@
 					"target": "_self",
 					"child": [{
 						"title": "一般情况",
-						"href": "html/ccccc.html",
+						"href": "html/Fgeneral.html",
+						"target": "_self"
+					},{
+						"title": "体格检查",
+						"href": "html/Fphysical.html",
 						"target": "_self"
 					}]
 				},
@@ -44,7 +46,21 @@
 					"target": "_self",
 					"child": [{
 						"title": "一般情况",
-						"href": "html/dddd.html",
+						"href": "html/Bgeneral.html",
+						"target": "_self"
+					},{
+						"title": "体格检查",
+						"href": "html/Bphysical.html",
+						"target": "_self"
+					}]
+				},
+				{
+					"title": "免费孕前优生健康检查",
+					"href": "",
+					"target": "_self",
+					"child": [{
+						"title": "同意书",
+						"href": "html/Letterofauthorization.html",
 						"target": "_self"
 					}]
 				}
@@ -82,12 +98,12 @@
 				"target": "_self",
 				"child": [{
 						"title": "查询档案信息",
-						"href": "html/gggg.html?v=1",
+						"href": "html/Basicinformation.html?v=1",
 						"target": "_self"
 					},
 					{
 						"title": "打开超声影像",
-						"href": "html/hhhhh.html?v=3",
+						"href": "html/ultrasoundImage.html?v=3",
 						"target": "_self"
 					}
 				]
@@ -121,22 +137,22 @@
 					"target": "_self",
 					"child": [{
 							"title": "常规检查",
-							"href": "html/jjjjj.html",
+							"href": "html/regular_project_feman.html",
 							"target": "_self"
 						},
 						{
 							"title": "X射线检查",
-							"href": "html/kkkkk.html",
+							"href": "html/x-ray_examine_man.html",
 							"target": "_self"
 						},
 						{
 							"title": "口腔检查",
-							"href": "html/lllllll.html",
+							"href": "html/oral_cavity_examine_feman.html",
 							"target": "_self"
 						},
 						{
 							"title": "检查结果",
-							"href": "html/mmmmm.html",
+							"href": "html/examine_result_feman.html",
 							"target": "_self"
 						}
 					]
@@ -147,22 +163,22 @@
 					"target": "_self",
 					"child": [{
 							"title": "常规检查",
-							"href": "html/nnnnnn.html",
+							"href": "html/regular_project_man.html",
 							"target": "_self"
 						},
 						{
 							"title": "X射线检查",
-							"href": "html/oooo.html",
+							"href": "html/x-ray_examine_man.html",
 							"target": "_self"
 						},
 						{
 							"title": "口腔检查",
-							"href": "html/pppp.html",
+							"href": "html/oral_cavity_examine_man.html",
 							"target": "_self"
 						},
 						{
 							"title": "检查结果",
-							"href": "html/qqqq.html",
+							"href": "html/examine_result_man.html",
 							"target": "_self"
 						}
 					]
