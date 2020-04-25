@@ -1,6 +1,5 @@
 package com.csdj.controller.fyq;
 
-import com.csdj.pojo.Record;
 import com.csdj.pojo.UltrasonicImage;
 import com.csdj.service.fyq.UltrasonicImageService;
 import org.springframework.beans.factory.annotation.Autowired;

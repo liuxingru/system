@@ -1,0 +1,4 @@
+2020-04-25 16:22:55,927 INFO (StartupInfoLogger.java:55)- Starting PsWebApplication on LAPTOP-AJI0RPAF with PID 11716 (E:\作业\长沙大计-孕前优生检查系统\111\pregnancy_system\ps-web\target\classes started by FYQ in E:\作业\长沙大计-孕前优生检查系统\111\pregnancy_system)
+2020-04-25 16:22:55,928 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-25 16:22:55,929 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-04-25 16:22:58,731 INFO (StartupInfoLogger.java:61)- Started PsWebApplication in 3.44 seconds (JVM running for 4.946)

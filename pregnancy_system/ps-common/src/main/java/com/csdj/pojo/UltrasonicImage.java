@@ -1,7 +1,5 @@
 package com.csdj.pojo;
 
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-
 /**
  * 超声影像表
  */
