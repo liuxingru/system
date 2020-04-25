@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>layui</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="../lib/layui-v2.5.5/css/layui.css" media="all">
+		<link rel="stylesheet" href="../css/public.css" media="all">
+		<style type="text/css">
+			.btn-right1 {
+				margin-left: 155% !important;
+			}
+
+			.btn-right2 {
+				margin-left: 70% !important;
+			}
+
+			.input-duo {
+				width: 400px !important;
+				height: 38px !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="layuimini-container">
+			<div class="layuimini-main">
+
+				<fieldset class="table-search-fieldset">
+					<legend>查询条件</legend>
+					<div style="margin: 10px 10px 10px 10px">
+						<form class="layui-form layui-form-pane" action="">
+							<div class="layui-form-item">
+								<div class="layui-inline">
+									<label class="layui-form-label" style="width: 130px;">请选择乡镇</label>
+									<div class="layui-input-inline">
+										<input type="text" name="username" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-inline">
+									<label class="layui-form-label">风险类型</label>
+									<div class="layui-input-inline">
+										<select name="city" lay-verify="required">
+											<option value="0">正常</option>
+											<option value="1">异常</option>
+										</select>
+									</div>
+								</div>
+								<div class="layui-inline">
+									<div class="layui-input-inline">
+									</div>
+								</div>
+								<div class="layui-inline">
+									<label class="layui-form-label" style="width: 130px;">创建时间 从</label>
+									<div class="layui-input-inline">
+										<input type="text" name="classify" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-inline">
+									<label class="layui-form-label">至</label>
+									<div class="layui-input-inline">
+										<input type="text" name="classify" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-inline">
+									<button type="button" class="layui-btn  layui-btn-sm  layui-btn-normal ">查 询</button>
+								</div>
+								<div class="layui-inline">
+									<button type="button" class="layui-btn layui-btn-sm  layui-btn-danger">发送短信</button>
+								</div>
+								<div class="layui-inline">
+									<button type="button" class="layui-btn layui-btn-sm     layui-btn-primary ">清 空</button>
+								</div>
+								<div class="layui-inline">
+									<button type="button" class="layui-btn  layui-btn-sm layui-btn-warm">返 回</button>
+								</div>
+								
+							</div>
+						</form>
+					</div>
+				</fieldset>
+				<br />
+				<br />
+				<fieldset class="table-search-fieldset">
+					<br />
+					<legend>评估建议短信随访</legend>
+					<iframe name="toppage" width=100%; height=600px; marginwidth=0; marginheight=0; frameborder="no"; border="0;"  src="note2_2.html"; ></iframe>
+					<br />
+				</fieldset>
+
+			</div>
+		</div>
+		<script src="../lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
+		<script>
+			layui.use(['form', 'layedit', 'laydate', 'table'], function() {
+				var form = layui.form,
+					layer = layui.layer,
+					layedit = layui.layedit,
+					table = layui.table,
+					laydate = layui.laydate;
+				
+			});
+		</script>
+
+	</body>
+</html>

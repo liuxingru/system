@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>常规项目检查男</title>
+		<link rel="stylesheet" href="lib/layui/css/layui.css">
+		<link rel="stylesheet" href="../css/public.css" media="all">
+	</head>
+	<body>
+		<div class="layuimini-container">
+			<div class="layui-container" style="width: 1200px">
+				<div class="layui-container">
+					<br />
+					<div class="layui-row">
+						<form class="layui-form " action="">
+							<div class="layui-col-md12" style="background-color: #F1F1F1;border: 1px solid #a4a2a2;">
+								<div class="layui-row">
+									<div class="layui-col-md12">
+										<br />
+										<fieldset class="table-search-fieldset layui-form-pane" style="padding: 1%;">
+											<legend>基本信息</legend>
+											<div class="layui-row">
+												<div class="layui-col-md6">
+													<div class="layui-form-item ">
+														<label class="layui-form-label ">编号：</label>
+														<div class="layui-input-block">
+															<input type="text" name="title" required lay-verify="required" placeholder="请输入编号" autocomplete="off"
+															 class="layui-input">
+														</div>
+													</div>
+												</div>
+												<div class="layui-col-md6">
+													<div class="layui-form-item">
+														<label class="layui-form-label">性别：</label>
+														<div class="layui-input-block">
+															<input type="text" name="title" required lay-verify="required" placeholder="请输入性别" autocomplete="off"
+															 class="layui-input">
+														</div>
+													</div>
+												</div>
+												<div class="layui-col-md6">
+													<div class="layui-form-item">
+														<label class="layui-form-label">姓名：</label>
+														<div class="layui-input-block">
+															<input type="text" name="title" required lay-verify="required" placeholder="请输入性别" autocomplete="off"
+															 class="layui-input">
+														</div>
+													</div>
+												</div>
+												<div class="layui-col-md6">
+													<div class="layui-form-item">
+														<label class="layui-form-label">对应姓名：</label>
+														<div class="layui-input-block">
+															<input type="text" name="title" required lay-verify="required" placeholder="请输入性别" autocomplete="off"
+															 class="layui-input">
+														</div>
+													</div>
+												</div>
+												<div class="layui-col-md6">
+													<div class="layui-form-item">
+														<label class="layui-form-label">职业：</label>
+														<div class="layui-input-block">
+															<input type="text" name="title" required lay-verify="required" placeholder="请输入职业" autocomplete="off"
+															 class="layui-input">
+														</div>
+													</div>
+												</div>
+												<div class="layui-col-md6">
+													<div class="layui-form-item">
+														<label class="layui-form-label">对方职业：</label>
+														<div class="layui-input-block">
+															<input type="text" name="title" required lay-verify="required" placeholder="请输入对方职业" autocomplete="off"
+															 class="layui-input">
+														</div>
+													</div>
+												</div>
+											</div>
+										</fieldset>
+										<fieldset class="table-search-fieldset" style="padding: 1%;">
+											<legend>既往病史</legend>
+											<div class="layui-row">
+												<div class="layui-col-md2 layui-col-md-offset1">
+													<div id="btn">
+														<input id="wu" type="checkbox" name="" title="无" lay-skin="primary">
+													</div>
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing" type="checkbox" name="" title="遗传性疾病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing" type="checkbox" name="" title="精神疾病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing" type="checkbox" name="" title="先天性疾病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing" type="checkbox" name="" title="传染病" lay-skin="primary">
+												</div>
+											</div><br />
+											<div class="layui-row">
+												<div class="layui-col-md2 layui-col-md-offset1">
+													<input class="jibing" type="checkbox" name="" title="性病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing" type="checkbox" name="" title="重要器官疾病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing" type="checkbox" name="" title="泌尿生殖系统疾病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md3">
+													<div class="layui-form-item" style="margin-top: -4%;">
+														<label class="layui-form-label">疾病名称</label>
+														<div class="layui-input-block">
+															<input id="jibing" type="text" name="title" placeholder="请输入疾病名称" autocomplete="off" class="layui-input">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="layui-row">
+												<div class="layui-col-md12">
+													<div class="layui-form-item">
+														<div class="layui-inline" style="padding-left: 14px;">
+															<label class="layui-form-label" style="width: 200px;">若为精神疾病，发病次数:</label>
+															<div class="layui-input-block">
+																<input type="text" style="width: 30%;" name="title" autocomplete="off" class="layui-input">
+															</div>
+														</div>
+														<div class="layui-inline" style="margin-left: -1%;">
+															<label class="layui-form-label" style="width: 200px">最近一次发病时间:</label>
+															<div class="layui-input-inline">
+																<input id="examineDate" type="text" name="title" style="width: 50%;" autocomplete="off" class="layui-input">
+															</div>
+														</div>
+														<div class="layui-inline" style="margin-left: -15%;">
+															<label class="layui-form-label">是否服药</label>
+															<div class="layui-input-block">
+																<input type="radio" name="take-medicine" value="0" title="是">
+																<input type="radio" name="take-medicine" value="1" title="否" checked>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="layui-row">
+												<div class="layui-col-md12">
+													<div class="layui-form-item">
+														<label class="layui-form-label" style="width: 200px">目前生活/社会适应能力</label>
+														<div class="layui-input-block">
+															<input type="radio" name="aaa" value="男" title="正常工作" checked>
+															<input type="radio" name="aaa" value="女" title="不工作">
+															<input type="radio" name="aaa" value="女" title="生活自理">
+															<input type="radio" name="aaa" value="女" title="需要帮助">
+															<input type="radio" name="aaa" value="女" title="不能自理">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="layui-row">
+												<div class="layui-col-md4" style="padding-left: 48px;">
+													<div class="layui-form-item">
+														<label class="layui-form-label">手术记录：</label>
+														<div class="layui-input-block">
+															<input type="radio" name="aa" value="男" title="有">
+															<input type="radio" name="aa" value="女" title="无" checked>
+
+														</div>
+													</div>
+												</div>
+												<div class="layui-col-md4">
+													<div class="layui-form-item">
+														<label class="layui-form-label">手术名称：</label>
+														<div class="layui-input-block">
+															<input type="text" name="title" placeholder="请输入手术名称" autocomplete="off" class="layui-input">
+														</div>
+													</div>
+												</div>
+												<div class="layui-col-md4">
+													<div class="layui-form-item">
+														<label class="layui-form-label">手术时间：</label>
+														<div class="layui-input-block">
+															<input id="examineDate2" type="text" name="title" placeholder="请输入手术时间" autocomplete="off" class="layui-input">
+														</div>
+												<div class="layui-inline" style="margin-left: -15%;">
+													<label class="layui-form-label">是否服药</label>
+													<div class="layui-input-block">
+														<input type="radio" name="take-medicine" value="0" title="是">
+														<input type="radio" name="take-medicine" value="1" title="否" checked>
+													</div>
+												</div>
+											</div>
+										</fieldset>
+										<fieldset class="table-search-fieldset" style="padding: 1%;">
+											<legend>现病史</legend>
+											<div class="layui-row">
+												<div class="layui-col-md2 layui-col-md-offset1">
+													<div id="btn2">
+														<input id="wu2" type="checkbox" name="" title="无" lay-skin="primary">
+													</div>
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing2" type="checkbox" name="" title="遗传性疾病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing2" type="checkbox" name="" title="精神疾病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing2" type="checkbox" name="" title="先天性疾病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md2">
+													<input class="jibing2" type="checkbox" name="" title="传染病" lay-skin="primary">
+												</div>
+												<div class="layui-col-md6">
+													<div class="layui-form-item" style="margin-left: 12%;">
+														<label class="layui-form-label"><input class="jibing2" type="checkbox" name="" title="其他" lay-skin="primary"></label>
+														<div class="layui-input-block" style="padding-top: 2%;">
+															<input id="jibing2" type="text" name="title" placeholder="请输入具体疾病名称" autocomplete="off" class="layui-input">
+														</div>
+													</div>
+												</div>
+											</div>
+										</fieldset>
+										<fieldset class="table-search-fieldset" style="padding: 1%;">
+											<legend>婚育史</legend>
+											<div class="layui-row">
+												<div class="layui-col-md12" style="margin-left: -3%;">
+													<div class="layui-form-item">
+														<div class="layui-inline">
+															<div class="layui-input-block">
+																<input type="radio" name="a" value="男" title="无">
+																<input type="radio" name="a" value="女" title="有" checked>
+																<input type="radio" name="a" value="女" title="未婚先孕">
+															</div>
+														</div>
+														<div class="layui-inline" style="margin-left: -1%;">
+															<label class="layui-form-label">足月子：</label>
+															<div class="layui-input-inline">
+																<input type="text" name="title" style="width: 50%;" autocomplete="off" class="layui-input">
+															</div>
+														</div>
+														<div class="layui-inline" style="margin-left: -13%;">
+															<label class="layui-form-label">足月女：</label>
+															<div class="layui-input-inline">
+																<input type="text" name="title" style="width: 50%;" autocomplete="off" class="layui-input">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="layui-col-md6">
+													<div class="layui-form-item">
+														<label class="layui-form-label" style="width: 200px">子女是否患有遗传性疾病</label>
+														<div class="layui-input-block">
+															<input type="radio" name="sex" value="男" title="无" checked>
+															<input type="radio" name="sex" value="女" title="有:">
+														</div>
+													</div>
+
+												</div>
+												<div class="layui-col-md6" style="margin-left: -11%;">
+													<input type="text" name="title" autocomplete="off" class="layui-input">
+												</div>
+											</div>
+										</fieldset>
+									</div>
+								</div>
+								<div class="layui-row">
+									<div class="layui-col-md6" style="padding-left: 10%;">
+										<div class="layui-form-item">
+											<label class="layui-form-label">医生签名：</label>
+											<div class="layui-input-block" style="width:40%;">
+												<select name="city" lay-verify="required">
+													<option value=""></option>
+													<option value="0">北京</option>
+													<option value="1">上海</option>
+													<option value="2">广州</option>
+													<option value="3">深圳</option>
+													<option value="4">杭州</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="layui-col-md6">
+										<div class="layui-form-item">
+											<label class="layui-form-label">登记日期：</label>
+											<div class="layui-input-block" style="width:40%;">
+												<input id="examineDate3" type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+												 autocomplete="off" class="layui-input">
+											</div>
+										</div>
+									</div>
+									<div class="layui-col-md6 layui-col-md-offset5">
+										<button type="button" class="layui-btn layui-btn-normal" style="width: 22%" id="btnaa">保存</button>
+									</div>
+								</div>
+								<br />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div><br /><br /><br />
+	</body>
+	<script src="lib/layui/css/layui.js"></script>
+	<script>
+		layui.use(['form', 'laydate', 'jquery'], function() {
+			var form = layui.form,
+				laydate = layui.laydate,
+				$ = layui.jquery;
+			laydate.render({
+				elem: '#examineDate',
+			});
+			laydate.render({
+				elem: '#examineDate2',
+			});
+			laydate.render({
+				elem: '#examineDate3',
+			});
+			$("#btn").click(function() {
+				if ($("#wu").is(':checked')) {
+					$(".jibing").prop("checked", false);
+					$(".jibing").prop('disabled', true);
+					$("#jibing").prop('disabled', true);
+					form.render('checkbox');
+				} else {
+					$(".jibing").prop('disabled', false);
+					$("#jibing").prop('disabled', false);
+					form.render('checkbox');
+				}
+			})
+			$("#btn2").click(function() {
+				if ($("#wu2").is(':checked')) {
+					$(".jibing2").prop("checked", false);
+					$(".jibing2").prop('disabled', true);
+					$("#jibing2").prop('disabled', true);
+					form.render('checkbox');
+				} else {
+					$(".jibing2").prop('disabled', false);
+					$("#jibing2").prop('disabled', false);
+					form.render('checkbox');
+				}
+			})
+		});
+	</script>
+</html>
