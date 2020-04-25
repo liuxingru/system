@@ -1,9 +1,10 @@
 package com.csdj.pojo;
 
-public class Test {
+/**
+ * 证件类型表
+ */
+public class DocumentType {
     private Integer id;
-    private String name;
-    private Integer age;
 
     public Integer getId() {
         return id;
@@ -21,11 +22,5 @@ public class Test {
         this.name = name;
     }
 
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
+    private String name;
 }
