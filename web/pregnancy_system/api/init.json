@@ -77,12 +77,12 @@
 				"target": "_self",
 				"child": [{
 						"title": "自定义短信随访",
-						"href": "html/eeee.html",
+						"href": "html/note1.html",
 						"target": "_self"
 					},
 					{
 						"title": "评估建议短信随访",
-						"href": "html/ffffff.html",
+						"href": "html/note2.html",
 						"target": "_self"
 					}
 				]
