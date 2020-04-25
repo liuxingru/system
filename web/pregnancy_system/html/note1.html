@@ -8,7 +8,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="../lib/layui-v2.5.5/css/layui.css" media="all">
 		<link rel="stylesheet" href="../css/public.css" media="all">
-		<link rel="stylesheet" href="../lib/layui-v2.5.5/css/soulTable.css" media="all">
 		<style type="text/css">
 			.btn-right1 {
 				margin-left: 155% !important;
@@ -124,7 +123,8 @@
 				<fieldset class="table-search-fieldset">
 					<br />
 					<legend>自定义短信随访</legend>
-					<table id="demo" lay-filter="test"></table>
+					<!-- <table id="demo" lay-filter="test"></table> -->
+					<iframe name="toppage" width=100%; height=600px; marginwidth=0; marginheight=0; frameborder="no"; border="0;"  src="note1_1.html"; ></iframe>
 					<br />
 				</fieldset>
 
@@ -132,98 +132,14 @@
 		</div>
 		<script src="../lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
 		<script>
-			// 自定义模块
-			layui.config({
-				base: '../ext/', // 模块目录
-				version: 'v1.5.4'
-			}).extend({ // 模块别名
-				soulTable: 'soulTable'
-			});
-			layui.use(['form', 'layedit', 'laydate', 'table', 'soulTable'], function() {
+			
+			layui.use(['form', 'layedit', 'laydate', 'table'], function() {
 				var form = layui.form,
 					layer = layui.layer,
 					layedit = layui.layedit,
 					table = layui.table,
-					laydate = layui.laydate,
-					soulTable = layui.soulTable;
-				table.render({
-					elem: '#demo',
-					height: 500,
-					url: '../test.json' //数据接口
-						,
-					page: true //开启分页
-						,
-					totalRow: true,
-					limit: 5,
-					limits: [5, 10, 15, 20, 25],
-					contextmenu: {
-						// 表格内容右键菜单配置
-						body: [{
-								name: '复制',
-								icon: 'layui-icon layui-icon-template',
-								click: function(obj) {
-									soulTable.copy(JSON.stringify(obj.row));
-									layer.msg('复制成功！')
-								}
-							},
-							{
-								name: '删除当前行数据',
-								click: function(obj) {
-									obj.del()
-								}
-							}
-						],
-					},
-					cols: [
-						[ //表头
-							{
-								field: 'id',
-								title: 'ID',
-								width: 80,
-								sort: true,
-								fixed: 'left'
-							}, {
-								field: 'username',
-								title: '用户名',
-								width: 80
-							}, {
-								field: 'sex',
-								title: '性别',
-								width: 80,
-								sort: true
-							}, {
-								field: 'city',
-								title: '城市',
-								width: 80
-							}, {
-								field: 'sign',
-								title: '签名',
-								width: 177
-							}, {
-								field: 'experience',
-								title: '积分',
-								width: 80,
-								sort: true
-							}, {
-								field: 'score',
-								title: '评分',
-								width: 80,
-								sort: true
-							}, {
-								field: 'classify',
-								title: '职业',
-								width: 80
-							}, {
-								field: 'wealth',
-								title: '财富',
-								sort: true
-							}
-						]
-					],
-					done: function() {
-						soulTable.render(this)
-					}
-				});
+					laydate = layui.laydate;
+				
 			});
 		</script>
 
