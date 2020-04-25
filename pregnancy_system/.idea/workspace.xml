@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="59d4a8c2-b687-4d51-b515-d74959818f74" name="Default Changelist" comment="" />
+
+
     <list default="true" id="59d4a8c2-b687-4d51-b515-d74959818f74" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
@@ -104,9 +107,27 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_2_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_2_0_4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_2_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_2_0_4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_weekend_1_1_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_weekend_1_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/Gynecology.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/HealthCheckup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/Intelligence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/IntelligenceTypeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/LetterOfConsent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/LetterOfConsentSignature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/MaleDisease.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/MedicalAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/MedicalAdviceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/RResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/RResult2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/Record.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/Test.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ps-service/src/main/java/com/csdj/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ps-service/src/main/java/com/csdj/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/DKqDescribe.java" beforeDir="false" afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/DKqDescribe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/DocumentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/DocumentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/EducationLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/EducationLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/ExamineDoctorDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/ExamineDoctorDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/FollowUpVisit.java" beforeDir="false" afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/FollowUpVisit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/GGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/ps-common/src/main/java/com/csdj/pojo/GGeneral.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +269,9 @@
       <workItem from="1587559823820" duration="4199000" />
       <workItem from="1587609816239" duration="1062000" />
       <workItem from="1587624678383" duration="641000" />
-      <workItem from="1587776868170" duration="3494000" />
+
+      <workItem from="1587776868170" duration="2861000" />
+      <workItem from="1587776868170" duration="2861000" />
     </task>
     <servers />
   </component>
@@ -261,6 +284,9 @@
         <entry key="MAIN">
           <value>
             <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -328,4 +354,4 @@
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1587560669989" />
   </component>
-</project>
+</project

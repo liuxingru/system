@@ -4,7 +4,8 @@ package com.csdj.pojo;
  * 证件类型表
  */
 public class DocumentType {
-    private Integer id;
+    private Integer id;//证件类型id
+    private String name;//证件内容
 
     public Integer getId() {
         return id;
@@ -22,5 +23,5 @@ public class DocumentType {
         this.name = name;
     }
 
-    private String name;
+
 }

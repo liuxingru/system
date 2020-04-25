@@ -1,11 +1,11 @@
 package com.csdj.pojo;
 
 /**
- * 文化程度类型表
+ * 智力类型表
  */
-public class EducationLevel {
-    private Integer id;//文化程度类型id
-    private String name;//文化程度内容
+public class IntelligenceTypeb {
+    private Integer id;//智力类型id
+    private String name;//智力内容
 
     public Integer getId() {
         return id;

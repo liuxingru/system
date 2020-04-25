@@ -5,9 +5,10 @@ package com.csdj.pojo;
  */
 public class DKqDescribe {
     private Integer id; //id
-    private Integer dNumber;
-    private Integer dNormal;
-    private String describe;
+    private Integer dNumber;//检查设备号码
+    private Integer dNormal;//检查是否正常（检查是否正常）
+    private String describe;//描述
+    private Integer eid;//检查医生与检查时表id（外键 对应检查医生与检查时间表）
 
     public Integer getId() {
         return id;
@@ -49,5 +50,5 @@ public class DKqDescribe {
         this.eid = eid;
     }
 
-    private Integer eid;
+
 }

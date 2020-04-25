@@ -6,10 +6,10 @@ import java.util.Date;
  * 检查医生与检查时间表
  */
 public class ExamineDoctorDate {
-    private Integer id;
-    private String certificate;
-    private Integer examineDoctorId;
-    private Date examineDate;
+    private Integer id;//检查医生与检查时间id
+    private String certificate;//证件id(外键 对应档案表)
+    private Integer examineDoctorId;//检查医生id(外键 对应用户表)
+    private Date examineDate;//检查时间
 
     public Integer getId() {
         return id;
