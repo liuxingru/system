@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>男性体格检查</title>
+		<link rel="stylesheet" href="../lib/layui/css/layui.css">
+		<link rel="stylesheet" href="../css/public.css" media="all">
+	</head>
+	<body>
+		<div class="layuimini-container">
+			<div class="layui-container" style="width: 1100px;">
+				<form class="layui-form layui-form-pane" action="" style="margin-top: 20px;">
+					<div class="layui-col-md6">
+						<div class="layui-form-item">
+							<label class="layui-form-label">系统编号</label>
+							<div class="layui-input-block">
+								<input type="text" name="title" required lay-verify="required" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">性别</label>
+							<div class="layui-input-block">
+								<input type="text" name="title" required lay-verify="required" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+
+					</div>
+					<div class="layui-col-md6">
+						<div class="layui-form-item">
+							<label class="layui-form-label">姓名</label>
+							<div class="layui-input-block">
+								<input type="text" name="title" required lay-verify="required" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">出生日期</label>
+							<div class="layui-input-block">
+								<input type="text" name="title" id="test1" required lay-verify="required" placeholder="yyyy-MM-dd" autocomplete="off"
+								 class="layui-input">
+							</div>
+						</div>
+
+					</div>
+
+					<fieldset class="table-search-fieldset" style="margin-top: 20px;">
+						<legend>一般体格检查</legend>
+						<div class="layui-form-item">
+
+
+							<div class="layui-inline">
+								<label class="layui-form-label">身高(CM) : </label>
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="required|phone" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-inline">
+								<label class="layui-form-label">体重(KG) : </label>
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="required|phone" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-inline">
+								<label class="layui-form-label">心率(次/分) : </label>
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="required|phone" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+
+						</div>
+						<div class="layui-form-item">
+							<div class="layui-inline">
+								<label class="layui-form-label">体重指数 : </label>
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="required|phone" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-inline">
+								<label class="layui-form-label">收缩压 :</label>
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="required|phone" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-inline">
+								<label class="layui-form-label">舒张压 :</label>
+								<div class="layui-input-inline">
+									<input type="text" name="title" lay-verify="required|phone" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<div>
+						<fieldset class="table-search-fieldset" style="margin-top: 20px;">
+							<legend>精神状态描述</legend>
+
+							<div class="layui-input-block">
+								<input type="radio" name="sex" value="正常" title="正常">
+								<input type="radio" name="sex" value="异常" title="异常">
+							</div>
+							<div class="layui-form-item layui-form-text">
+								<div class="layui-input-block">
+									<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div>
+						<fieldset class="table-search-fieldset" style="margin-top: 20px;">
+							<legend>智力是否异常(如果是，请选择一项)</legend>
+
+							<div class="layui-input-block">
+								<input type="radio" name="sex1" value="正常" title="正常">
+								<input type="radio" name="sex1" value="异常" title="异常">
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-input-block">
+									<input type="checkbox" name="like1[game]" lay-skin="primary" title="常识">
+									<input type="checkbox" name="like1[game]" lay-skin="primary" title="判断">
+									<input type="checkbox" name="like1[game]" lay-skin="primary" title="记忆">
+									<input type="checkbox" name="like1[game]" lay-skin="primary" title="计算">
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+
+					<div>
+						<fieldset class="table-search-fieldset" style="margin-top: 20px;">
+							<legend>五官异常描述</legend>
+
+							<div class="layui-form-item layui-form-text">
+								<div class="layui-input-block">
+									<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+
+					<div>
+						<fieldset class="table-search-fieldset" style="margin-top: 20px;">
+							<legend>特殊体态异常描述</legend>
+
+							<div class="layui-form-item layui-form-text">
+								<div class="layui-input-block">
+									<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+
+					<div>
+						<fieldset class="table-search-fieldset" style="margin-top: 20px;">
+							<legend>特殊面容异常描述</legend>
+
+							<div class="layui-form-item layui-form-text">
+								<div class="layui-input-block">
+									<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+
+					<div>
+						<fieldset class="table-search-fieldset" style="margin-top: 20px;">
+							<legend>皮肤毛发异常描述</legend>
+
+							<div class="layui-form-item layui-form-text">
+								<div class="layui-input-block">
+									<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div>
+						<fieldset class="table-search-fieldset" style="margin-top: 20px;">
+							<legend>甲状腺异常描述</legend>
+
+							<div class="layui-form-item layui-form-text">
+								<div class="layui-input-block">
+									<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<hr />
+					<div class="layui-form-item">
+						<div class="layui-inline">
+							<label class="layui-form-label">医生签名</label>
+							<div class="layui-input-inline">
+								<select name="quiz">
+									<option value="">管理员</option>
+								</select>
+							</div>
+						</div>
+						<div class="layui-inline">
+							<label class="layui-form-label">检查时间</label>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="test2" placeholder="yyyy-MM-dd">
+							</div>
+						</div>
+						<div class="layui-inline">
+							<div style="align-content: center;">
+								<div class="print">
+									<button class="layui-btn  layui-btn-sm"> 保 存 </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script src="../lib/layui/layui.js"></script>
+	<script type="text/javascript ">
+		layui.use(['layer', 'form', 'laydate'], function() {
+			var layer = layui.layer,
+				form = layui.form;
+			var laydate = layui.laydate;
+
+			//执行一个laydate实例
+			laydate.render({
+				elem: '#test1' //指定元素
+			});
+			laydate.render({
+				elem: '#test2' //指定元素
+			});
+		});
+	</script>
+</html>

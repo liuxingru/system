@@ -1,0 +1,202 @@
+{
+	"homeInfo": {
+		"title": "首页",
+		"href": "Basicinformation"
+	},
+	"logoInfo": {
+		"title": "孕前优生检查",
+		"image": "images/logo.png",
+		"href": ""
+	},
+	"menuInfo": [{
+			"title": "孕前优生档案信息",
+			"href": "",
+			"target": "_self",
+			"child": [{
+					"title": "信息查询",
+					"href": "",
+					"target": "_self",
+					"child": [{
+							"title": "基础信息查询",
+							"href": "Basicinformation",
+							"target": "_self"
+						},{
+							"title": "新增档案",
+							"href": "Newfile",
+							"target": "_self"
+						}]
+				},
+				{
+					"title": "妻子信息",
+					"href": "",
+					"target": "_self",
+					"child": [{
+						"title": "一般情况",
+						"href": "Fgeneral",
+						"target": "_self"
+					},{
+						"title": "体格检查",
+						"href": "Fphysical",
+						"target": "_self"
+					}]
+				},
+				{
+					"title": "丈夫信息",
+					"href": "",
+					"target": "_self",
+					"child": [{
+						"title": "一般情况",
+						"href": "Bgeneral",
+						"target": "_self"
+					},{
+						"title": "体格检查",
+						"href": "Bphysical",
+						"target": "_self"
+					}]
+				},
+				{
+					"title": "免费孕前优生健康检查",
+					"href": "",
+					"target": "_self",
+					"child": [{
+						"title": "同意书",
+						"href": "Letterofauthorization",
+						"target": "_self"
+					}]
+				}
+
+			]
+		},
+		{
+			"title": "短信随访服务",
+			"href": "",
+			"target": "_self",
+			"child": [{
+				"title": "短信收发",
+				"href": "",
+				"target": "_self",
+				"child": [{
+						"title": "自定义短信随访",
+						"href": "note1",
+						"target": "_self"
+					},
+					{
+						"title": "评估建议短信随访",
+						"href": "note2",
+						"target": "_self"
+					}
+				]
+			}]
+		},
+		{
+			"title": "影像系统",
+			"href": "",
+			"target": "_self",
+			"child": [{
+				"title": "影像工作站",
+				"href": "",
+				"target": "_self",
+				"child": [{
+						"title": "查询档案信息",
+						"href": "Basicinformation",
+						"target": "_self"
+					},
+					{
+						"title": "打开超声影像",
+						"href": "ultrasoundImage",
+						"target": "_self"
+					}
+				]
+			}]
+		},
+		{
+			"title": "婚检系统",
+			"href": "",
+			"target": "_self",
+			"child": [{
+					"title": "申报与证明打印",
+					"href": "",
+					"target": "_self",
+					"child": [{
+						"title": "婚前检查证明(女)",
+						"href": "medical_evidence_feman",
+						"target": "_self"
+						},
+						{
+							"title": "婚前检查证明(男)",
+							"href": "medical_evidence_man",
+							"target": "_self"
+						}
+					
+					]
+					
+				},
+				{
+					"title": "女性常规检查",
+					"href": "",
+					"target": "_self",
+					"child": [{
+							"title": "常规检查",
+							"href": "regular_project_feman",
+							"target": "_self"
+						},
+						{
+							"title": "X射线检查",
+							"href": "x-ray_examine_feman",
+							"target": "_self"
+						},
+						{
+							"title": "口腔检查",
+							"href": "oral_cavity_examine_feman",
+							"target": "_self"
+						},
+						{
+							"title": "检查结果",
+							"href": "examine_result_feman",
+							"target": "_self"
+						}
+					]
+				},
+				{
+					"title": "男性常规检查",
+					"href": "",
+					"target": "_self",
+					"child": [{
+							"title": "常规检查",
+							"href": "regular_project_man",
+							"target": "_self"
+						},
+						{
+							"title": "X射线检查",
+							"href": "x-ray_examine_man",
+							"target": "_self"
+						},
+						{
+							"title": "口腔检查",
+							"href": "oral_cavity_examine_man",
+							"target": "_self"
+						},
+						{
+							"title": "检查结果",
+							"href": "examine_result_man",
+							"target": "_self"
+						}
+					]
+				},
+				{
+					"title": "系统设置",
+					"href": "",
+					"target": "_self",
+					"child": [{
+						"title": "化验项目匹配",
+						"href": "uuuu",
+						"target": "_self"
+						}
+					]
+
+				}
+			]
+		}
+
+	]
+}
